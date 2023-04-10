@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="214.0" prefWidth="416.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AccQuestController">
    <children>
       <Label fx:id="questionLabel" layoutX="12.0" layoutY="14.0" prefHeight="80.0" prefWidth="392.0" text="questionLabel" />
@@ -17,5 +16,6 @@
             <Font size="10.0" />
          </font>
       </Button>
+      <Button layoutX="12.0" layoutY="179.0" mnemonicParsing="false" onAction="#hintHandler" prefHeight="24.0" prefWidth="53.0" text="Hint" />
    </children>
 </AnchorPane>
