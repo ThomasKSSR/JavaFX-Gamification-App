@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="214.0" prefWidth="416.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AccQuestController">
+   <children>
+      <Label fx:id="questionLabel" layoutX="12.0" layoutY="14.0" prefHeight="80.0" prefWidth="392.0" text="questionLabel" />
+      <TextField fx:id="answerTextField" layoutX="12.0" layoutY="107.0" prefHeight="32.0" prefWidth="392.0" />
+      <Button layoutX="146.0" layoutY="168.0" mnemonicParsing="false" onAction="#confirmAnswerHandler" prefHeight="32.0" prefWidth="123.0" text="Confirm Answer" />
+      <Button layoutX="318.0" layoutY="176.0" mnemonicParsing="false" onAction="#abandonQuestHandler" prefHeight="24.0" prefWidth="85.0" text="Abandon Quest">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
