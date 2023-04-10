@@ -9,6 +9,8 @@ import Utils.Observable;
 import Utils.Observer;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 
@@ -108,6 +110,13 @@ public class Service implements Observable {
             questDTOs.add(questDTO);
 
         }
+        Collections.sort(questDTOs, new Comparator<QuestDTO>() {
+
+            public int compare(QuestDTO o1, QuestDTO o2) {
+                // compare two instance of `Score` and return `int` as result.
+                return o1.getPoints()-o2.getPoints();
+            }
+        });
         return questDTOs;
     }
 
