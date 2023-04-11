@@ -1,0 +1,39 @@
+.table-view {
+    -fx-background-color: linear-gradient(to bottom, #1dbbdd44, #93f9b944);
+    -fx-border-color:  #000000;
+    -fx-font-size: 12px;
+}
+
+.table-view .column {
+    -fx-background-color: linear-gradient(to bottom, #1dbbdd44, #93f9b944);
+    -fx-border-color:  #000000;
+    -fx-font-size: 12px;
+}
+
+.anchor{
+    -fx-background-color: linear-gradient(to bottom, #FFCCCB, gray);
+}
+
+.label{
+    -fx-text-fill: #000000;
+}
+
+.textLine{
+    -fx-background-color: linear-gradient(to bottom, #1dbbdd44, #93f9b944);
+    -fx-prompt-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-border-color:  #000000;
+    -fx-font-size: 12px;
+}
+
+.btn{
+    -fx-background-color: linear-gradient(to bottom, #1dbbdd44, #93f9b944);
+
+    -fx-prompt-text-fill: black;
+    -fx-font-weight: bold;
+
+    fx-border-top-left-radius: 10px;
+    fx-border-top-right-radius: 5px;
+    fx-border-bottom-left-radius: 5px;
+    fx-border-bottom-right-radius: 10px;
+}

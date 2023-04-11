@@ -4,29 +4,36 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="538.0" prefWidth="674.0" stylesheets="@../../style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.QuestsController">
+<AnchorPane prefHeight="538.0" prefWidth="674.0" styleClass="anchor" stylesheets="@../../style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.QuestsController">
    <children>
       <TableView fx:id="questsTableView" layoutX="104.0" layoutY="38.0" prefHeight="324.0" prefWidth="247.0">
         <columns>
-          <TableColumn fx:id="questsColumn" prefWidth="166.66663360595703" text="Quests" />
-          <TableColumn fx:id="questsPointsColumn" prefWidth="80.00006103515625" text="Points" />
+          <TableColumn fx:id="questsColumn" prefWidth="166.66663360595703" styleClass="column" text="Quests" />
+          <TableColumn fx:id="questsPointsColumn" prefWidth="80.00006103515625" styleClass="column" text="Points" />
         </columns>
       </TableView>
       <TableView fx:id="usersTableView" layoutX="366.0" layoutY="38.0" prefHeight="324.0" prefWidth="307.0">
         <columns>
-          <TableColumn fx:id="usernameColumn" prefWidth="88.0" text="Username" />
-          <TableColumn fx:id="rankColumn" prefWidth="75.33328247070312" text="Rank" />
-            <TableColumn fx:id="badgesColumn" prefWidth="143.33331298828125" text="Badges" />
+          <TableColumn fx:id="usernameColumn" prefWidth="88.0" styleClass="column" text="Username" />
+          <TableColumn fx:id="rankColumn" prefWidth="75.33328247070312" styleClass="column" text="Rank" />
+            <TableColumn fx:id="badgesColumn" prefWidth="143.33331298828125" styleClass="column" text="Badges" />
         </columns>
       </TableView>
-      <Label fx:id="usernameLabel" layoutX="14.0" layoutY="14.0" prefHeight="47.0" prefWidth="89.0" text="Label">
+      <Label fx:id="usernameLabel" layoutX="14.0" layoutY="14.0" prefHeight="47.0" prefWidth="89.0" stylesheets="@../../style.css" text="Label">
          <font>
             <Font name="System Bold" size="14.0" />
          </font></Label>
-      <Button layoutX="128.0" layoutY="397.0" mnemonicParsing="false" onAction="#acceptQuestHandler" prefHeight="38.0" prefWidth="223.0" text="Accept Quest" />
+      <Button layoutX="128.0" layoutY="397.0" mnemonicParsing="false" onAction="#acceptQuestHandler" prefHeight="38.0" prefWidth="223.0" styleClass="btn" stylesheets="@../../style.css" text="Accept Quest">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect></Button>
       <Label fx:id="rankLabel" layoutX="14.0" layoutY="61.0" prefHeight="47.0" prefWidth="89.0" text="Label">
          <font>
             <Font name="System Bold" size="14.0" />
@@ -35,7 +42,19 @@
          <font>
             <Font name="System Bold" size="14.0" />
          </font></Label>
-      <Button layoutX="128.0" layoutY="454.0" mnemonicParsing="false" onAction="#createQuestHandler" prefHeight="38.0" prefWidth="223.0" text="Create Quest" />
-      <Button layoutY="174.0" mnemonicParsing="false" onAction="#logoutHandler" prefHeight="25.0" prefWidth="89.0" text="Log out" />
+      <Button layoutX="128.0" layoutY="454.0" mnemonicParsing="false" onAction="#createQuestHandler" prefHeight="38.0" prefWidth="223.0" styleClass="btn" stylesheets="@../../style.css" text="Create Quest">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect></Button>
+      <Button layoutY="174.0" mnemonicParsing="false" onAction="#logoutHandler" prefHeight="25.0" prefWidth="89.0" styleClass="btn" stylesheets="@../../style.css" text="Log out">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect></Button>
    </children>
 </AnchorPane>
