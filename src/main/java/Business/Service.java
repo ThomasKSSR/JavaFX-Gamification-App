@@ -203,19 +203,19 @@ public class Service implements Observable {
             Badge badge= new Badge("Helper");
             BadgeOwner badgeOwner= new BadgeOwner(currentUser.getId(),badge.getId());
             badgeOwnerRepository.add(badgeOwner);
-        }else if(currentUser.getCompletedQuests()==5){
+        }else if(currentUser.getCreatedQuests()==5){
             Badge badge= new Badge("Moderator");
             BadgeOwner badgeOwner= new BadgeOwner(currentUser.getId(),badge.getId());
             badgeOwnerRepository.add(badgeOwner);
             badgeOwnerRepository.delete(new BadgeOwner(currentUser.getId(),"Helper"));
 
-        }else if(currentUser.getCompletedQuests()==10){
+        }else if(currentUser.getCreatedQuests()==10){
             Badge badge= new Badge("Admin");
             BadgeOwner badgeOwner= new BadgeOwner(currentUser.getId(),badge.getId());
             badgeOwnerRepository.add(badgeOwner);
             badgeOwnerRepository.delete(new BadgeOwner(currentUser.getId(),"Moderator"));
 
-        }else if(currentUser.getCompletedQuests() ==15){
+        }else if(currentUser.getCreatedQuests() ==15){
             Badge badge= new Badge("GM");
             BadgeOwner badgeOwner= new BadgeOwner(currentUser.getId(),badge.getId());
             badgeOwnerRepository.add(badgeOwner);
